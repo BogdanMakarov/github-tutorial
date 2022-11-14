@@ -1,0 +1,39 @@
+/* Body */
+.page {
+  background-color: #fff;
+  color: #757575;
+}
+/* Logotip */
+.logo {
+  color: #000000;
+}
+.logo-name {
+  color: #2196f3;
+}
+.logo:hover {
+  color: #2196f3;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Site Nav */
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+/* Hero */
+.hero-title {
+  color: #212121;
+}
+/* Section, section-title */
+.section-title {
+  color: #212121;
+}
+/* Features */
+.feature-list .title {
+}
