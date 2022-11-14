@@ -1,39 +1,101 @@
-/* Body */
-.page {
-  background-color: #fff;
-  color: #757575;
-}
-/* Logotip */
-.logo {
-  color: #000000;
-}
-.logo-name {
-  color: #2196f3;
-}
-.logo:hover {
-  color: #2196f3;
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --logo-text-color: #000000;
+  --primary-bg-color: #ffffff;
+  --footer-color: #2f303a;
+  --footer-nav: rgba(255, 255, 255, 0.6);
 }
 
+/* Body */
+.page {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+/*  Logotip */
+.logo {
+  color: var(--logo-text-color);
+}
+.logo-name {
+  color: var(--accent-color);
+}
+.logo:hover {
+  color: var(--accent-color);
+}
+
+/* Hea */
+
+/* Убирает точки маркера */
 .list {
   list-style: none;
 }
 
 /* Site Nav */
 .site-nav .link {
-  color: #212121;
+  color: var(--title-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
 }
+/* Auth-nav */
+.auth-nav .line {
+  color: var(--primary-text-color);
+}
+.auth-nav .line:hover,
+.auth-nav .line:focus {
+  color: var(--accent-color);
+}
+
 /* Hero */
 .hero-title {
-  color: #212121;
+  color: var(--title-text-color);
 }
+
 /* Section, section-title */
 .section-title {
-  color: #212121;
+  color: var(--title-text-color);
 }
+
 /* Features */
 .feature-list .title {
+  color: var(--title-text-color);
+}
+
+/* Team */
+.command-title {
+  color: var(--title-text-color);
+}
+
+/* Button */
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-color);
+}
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--footer-color);
+}
+.logo-footer {
+  color: var(--primary-bg-color);
+}
+.logo-footer .title {
+  color: var(--accent-color);
+}
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--accent-color);
+}
+.address-link {
+  color: var(--primary-bg-color);
+}
+.nav-link {
+  color: var(--footer-nav);
 }
