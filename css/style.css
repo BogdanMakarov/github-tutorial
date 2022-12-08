@@ -58,8 +58,8 @@ body {
 .containerr {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1200px;
   outline: 2px solid tomato;
 }
@@ -75,8 +75,6 @@ body {
   display: flex;
 }
 .header-logo {
-  /* margin-top: 24px;
-  margin-bottom: 25px; */
   align-self: center;
   color: #000000;
   font-family: 'Raleway', cursive;
@@ -85,7 +83,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  /* display: inherit; */
 }
 
 .header-logo:hover,
@@ -130,6 +127,11 @@ body {
 .header-auth-nav {
   display: flex;
   margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .header-auth-nav .line {
@@ -151,16 +153,26 @@ body {
   background-color: var(--hero-foot-color);
   outline: 1px solird red;
   text-align: center;
+  /* height: 600px; */
 }
+
 .hero-title {
+  width: 696px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 30px;
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
   letter-spacing: 0.06em;
-  margin-top: 0px;
-  margin-bottom: 30px;
+  text-transform: uppercase;
 }
+
 .hero-btn.btn {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -168,12 +180,14 @@ body {
   min-width: 216px;
   border: 1px solid transparent;
   border-radius: 4px;
+  margin-bottom: 200px;
 }
-
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
 /* ------------FEATURES------------ */
 .features {
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 .features-title {
   font-weight: 700;
@@ -185,6 +199,8 @@ body {
 .features-list {
   display: flex;
   justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .features-item {
   margin-right: 30px;
@@ -205,7 +221,7 @@ body {
 }
 /* ------------WORK------------ */
 .work {
-  margin-bottom: 94px;
+  /* padding-bottom: 94px; */
 }
 .work-title {
   font-weight: 700;
@@ -216,8 +232,10 @@ body {
   margin-bottom: ;
 }
 .work-list {
+  display: block;
   display: flex;
   justify-content: center;
+  padding-bottom: 94px;
 }
 
 .work-item:not(:last-child) {
@@ -241,10 +259,11 @@ body {
 .team-list {
   display: flex;
   justify-content: center;
+  padding-bottom: 94px;
 }
 .team-item {
   background-color: var(--primary-white-color);
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -275,8 +294,8 @@ body {
 }
 .footer-logo {
   display: inline-block;
-  margin-top: 60px;
-  margin-bottom: 28px;
+  padding-top: 60px;
+  padding-bottom: 28px;
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 26px;
@@ -290,6 +309,9 @@ body {
 .footer-logo:hover,
 .footer-logo:focus {
   color: var(--accent-color);
+}
+.footer-list {
+  padding-bottom: 60px;
 }
 .address-link {
   display: inline-block;
@@ -324,9 +346,7 @@ body {
 }
 /* ------------PORTFOLIO------------ */
 
-.portf {
-  margin-top: 94px;
-  margin-bottom: 94px;
+/* .portf {
 }
 .portf-container {
   background-color: var(--primary-white-color);
@@ -335,11 +355,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-}
+} */
 /* KNOPKI NAV */
 .portf-list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 94px;
   margin-bottom: 34px;
   justify-content: center;
 }
@@ -350,13 +371,14 @@ body {
 .portf-gal-list {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 94px;
 }
 .portf-item {
-  /* width: 370px; */
-  width: calc((100% - 60px) / 3);
+  width: 370px;
+  /* width: calc((100% - 60px) / 3); */
   margin-right: 30px;
   margin-bottom: 30px;
-  background-color: #eeeeee;
+  background-color: var(--primary-white-color);
 }
 .portf-item:nth-child(3n) {
   margin-right: 0px;
@@ -373,11 +395,11 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  background-color: #eeeeee;
+  background-color: var(--primary-white-color);
   color: #212121;
 }
 .portf-text {
-  background-color: #eeeeee;
+  background-color: var(--primary-white-color);
   margin: 20px 24px 4px;
 
   margin-top: 0px;
@@ -392,6 +414,10 @@ body {
 /* ------------PORTF-BTN------------ */
 
 .portf-btn {
+  width: 112px;
+  height: 38px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -400,10 +426,16 @@ body {
   color: #212121;
   background-color: #f5f4fa;
   border: 1px solid transparent;
+  cursor: pointer;
+  padding: 6px 22px;
+  align-items: flex-start;
 }
 
 .portf-btn:hover,
 .portf-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
