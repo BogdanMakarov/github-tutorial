@@ -54,31 +54,33 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* sssss */
+/* CONTAINER PRIMARY*/
 .containerr {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid tomato;
 }
 img {
   display: block;
 }
 /* ------------HEADER------------ */
-.header {
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
-}
-.header-main-nav {
+.main-nav {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 .header-nav {
   display: flex;
+  align-items: center;
 }
+.header {
+  border-bottom: 1px solid var(--border-color);
+}
+/* LOGO */
 .header-logo {
+  display: inherit;
   align-self: center;
   color: #000000;
   font-family: 'Raleway', cursive;
@@ -88,29 +90,24 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-
 .header-logo:hover,
 .header-logo:focus {
   color: var(--accent-color);
 }
-
 .header-logo-name {
   color: var(--accent-color);
 }
-
-/* site-nav */
+/* SIT NAV */
 .header-sit-nav {
   display: flex;
-  margin-left: 93px;
+  margin-left: 90px;
 }
-.header-sit-nav-item:not(:last-child) {
+.header-sit-nav .header-item:not(:last-child) {
   margin-right: 50px;
 }
 .header-sit-nav .link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: block;
-
+  padding: 12px 0;
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -118,16 +115,18 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.header-sit-nav.link:not(:last-child) {
+  margin-right: 50px;
+}
 
 .header-sit-nav .link:hover,
 .header-sit-nav .link:focus {
   color: var(--accent-color);
 }
-
 .header-sit-nav .link.current {
   color: var(--accent-color);
 }
-/* auth-nav */
+/* AUTH NAV */
 .header-auth-nav {
   display: flex;
   margin-left: auto;
@@ -137,21 +136,17 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
 }
-
-.header-auth-nav .line {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-left: 40px;
+.header-auth-nav .header-auth + .header-auth {
+  margin-left: 50px;
+}
+.header-auth .line {
   color: var(--primary-text-color);
-  margin-left: 40px;
   text-decoration: none;
 }
-
-.header-auth-nav .line:hover,
-.header-auth-nav .line:focus {
+.header-auth .line:hover,
+.header-auth .line:focus {
   color: var(--accent-color);
 }
-
 /* ------------HERO------------ */
 .hero {
   background-color: var(--hero-foot-color);
@@ -163,36 +158,30 @@ img {
 
 .hero-title {
   width: 696px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: auto;
-  margin-left: auto;
-
-  padding-bottom: 30px;
-
-  color: var(--primary-white-color);
+  margin: 0px auto;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--primary-white-color);
 }
-
+/* BUTTON HERO */
 .hero-btn.btn {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   letter-spacing: 0.06em;
   min-width: 216px;
   border: 1px solid transparent;
-  border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #188ce8;
 }
+
 /* ------------FEATURES------------ */
-.features {
-}
+
 .features-title {
   font-weight: 700;
   font-size: 36px;
@@ -203,8 +192,7 @@ img {
 .features-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 .features-card:not(:last-child) {
   margin-right: 30px;
@@ -218,17 +206,14 @@ img {
 }
 
 .features-text {
-  /* margin-right: 30px; */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 0;
   width: 270px;
 }
 /* ------------WORK------------ */
 .work {
-  /* padding-top: 94px; */
   padding-bottom: 94px;
 }
 .work-title {
@@ -237,39 +222,34 @@ img {
   line-height: 1.16;
   text-align: center;
   margin-top: 0px;
-  margin-bottom: ;
+  margin-bottom: 50px;
 }
 .work-list {
   display: flex;
-  justify-content: center;
 }
 
 .work-item:not(:last-child) {
   margin-right: 30px;
-  display: inline-block;
 }
 
 /* ------------TEAM------------ */
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 .team-list {
   display: flex;
-  justify-content: center;
 }
 .team-item {
   background-color: var(--primary-white-color);
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -290,27 +270,29 @@ img {
 }
 .team-text {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
+
 /* ------------FOOTER------------ */
+
 .footer {
   background-color: var(--hero-foot-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   display: inline-block;
-  padding-top: 60px;
-  padding-bottom: 28px;
-  color: var(--primary-white-color);
+  margin-bottom: 28px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
   font-family: 'Raleway', cursive;
+  color: var(--primary-white-color);
 }
 .footer-logo-name {
   color: var(--accent-color);
@@ -319,8 +301,8 @@ img {
 .footer-logo:focus {
   color: var(--accent-color);
 }
+
 .footer-list {
-  padding-bottom: 60px;
 }
 .address-link {
   display: inline-block;
@@ -356,12 +338,14 @@ img {
 /* ------------PORTFOLIO------------ */
 
 /* KNOPKI NAV */
-
+.portf {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .portf-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 94px;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
   justify-content: center;
 }
 
@@ -396,9 +380,9 @@ img {
 .portf-gal-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 .portf-item {
+  display: block;
   width: 370px;
   /* width: calc((100% - 60px) / 3); */
   margin-right: 30px;
@@ -425,10 +409,7 @@ img {
 }
 .portf-text {
   background-color: var(--primary-white-color);
-  margin: 20px 24px 4px;
-
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin: 0 24px 20px 24px;
   text-align: start;
   font-weight: 400;
   font-size: 16px;
@@ -436,4 +417,3 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
 }
-/* ------------PORTF-BTN------------ */
