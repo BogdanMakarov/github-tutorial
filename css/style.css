@@ -76,7 +76,7 @@ img {
   align-items: center;
 }
 .header {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #eeeeee;
 }
 /* LOGO */
 .header-logo {
@@ -150,7 +150,6 @@ img {
 /* ------------HERO------------ */
 .hero {
   background-color: var(--hero-foot-color);
-  outline: 1px solid red;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -174,6 +173,7 @@ img {
   letter-spacing: 0.06em;
   min-width: 216px;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -377,6 +377,14 @@ img {
 }
 
 /* GALEREYA */
+.portf-card {
+  border: 1px solid #eeeeee;
+  /* border: 1px solid var(--border-color);
+  border-top: none;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px; */
+}
 .portf-gal-list {
   display: flex;
   flex-wrap: wrap;
@@ -384,11 +392,11 @@ img {
 .portf-item {
   display: block;
   width: 370px;
+  height: 404px;
   /* width: calc((100% - 60px) / 3); */
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: var(--primary-white-color);
-  border: 1px solid #eeeeee;
 }
 .portf-item:nth-child(3n) {
   margin-right: 0px;
